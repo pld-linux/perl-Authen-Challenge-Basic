@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Authen-Challenge-Basic perl module
-Summary(pl):	Modu³ perla Authen-Challenge-Basic
+Summary:	Authen::Challenge::Basic perl module
+Summary(pl):	Modu³ perla Authen::Challenge::Basic
 Name:		perl-Authen-Challenge-Basic
 Version:	0.1
 Release:	7
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Authen-Challenge-Basic authentication module.
+Authen::Challenge::Basic authentication module.
 
 %description -l pl
-Modu³ autentykacji Authen-Challenge-Basic.
+Modu³ autentykacji Authen::Challenge::Basic.
 
 %prep
 %setup -q -n Authen-Challenge-Basic-%{version}
