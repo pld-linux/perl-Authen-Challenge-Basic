@@ -30,7 +30,7 @@ that rely on adjusting the clock in one of the peers.
 Modu³ Perla Authen::Challenge::Basic udostêpnia prosty, oparty o MD5,
 protokó³ uwierzytelniania typu wezwanie/odpowied¼ umo¿liwiaj±cy
 wzajemne uwierzytelnianie partnerów podczas sesji. Protokó³ zawiera
-informacje synchronizujace, wiêc mo¿liwe jest wprowadzenie podczaes
+informacje synchronizuj±ce, wiêc mo¿liwe jest wprowadzenie podczas
 sesji ograniczeñ czasowych u³atwiaj±cych zapobieganie atakom opartym
 na przestawieniu zegara jednego z partnerów.
 
