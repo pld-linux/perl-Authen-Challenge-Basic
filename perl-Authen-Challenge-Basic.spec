@@ -14,7 +14,7 @@ Source0:	http://www.cpan.org/modules/by-module/Authen/Authen-Challenge-Basic-%{v
 # Source0-md5:	baafb21abd63b3b8b7829ea082891a42
 Patch0:		%{name}-Digest-MD5.patch
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Digest-MD5
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
