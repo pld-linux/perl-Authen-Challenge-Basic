@@ -1,0 +1,39 @@
+diff -ur Authen-Challenge-Basic-0.1.orig/Basic.pm Authen-Challenge-Basic-0.1/Basic.pm
+--- Authen-Challenge-Basic-0.1.orig/Basic.pm	Fri Jul 31 02:53:48 1998
++++ Authen-Challenge-Basic-0.1/Basic.pm	Mon Apr 30 23:59:54 2001
+@@ -163,7 +163,7 @@
+ 
+ =cut
+ 
+-use MD5;
++use Digest::MD5;
+ 
+ sub new {
+     my ($class, @opt) = @_;
+@@ -185,7 +185,7 @@
+ 
+ sub Challenge {
+     my ($self) = @_;
+-    my ($ctx) = new MD5;
++    my ($ctx) = new Digest::MD5;
+     my ($Count) = sprintf("%05d", $self->{'Count'}++);
+     my ($Stamp) = time;
+     # Add the shared secret...
+@@ -202,7 +202,7 @@
+ 
+ sub Response {
+     my ($self, $challenge) = @_;
+-    my ($ctx) = new MD5;
++    my ($ctx) = new Digest::MD5;
+     my ($Stamp) = time;
+     $self->{'Error'} = undef;
+     $ctx->add($challenge);
+@@ -249,7 +249,7 @@
+     }
+ 
+     # Insure a correct signature...
+-    $mysignature = new MD5;
++    $mysignature = new Digest::MD5;
+     $mysignature->add($c);
+     $mysignature->add($self->{'p'}->{'secret'});
+     $mysignature->add(int($tstamp));
