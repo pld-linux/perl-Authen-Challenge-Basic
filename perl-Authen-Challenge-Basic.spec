@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	Authen::Challenge::Basic - a basic challenge/response authentication scheme
 Summary(pl):	Authen::Challenge::Basic - podstawowy schemat uwierzytelniania wezwanie/odpowied¼
@@ -39,10 +43,13 @@ na przestawieniu zegara jednego z partnerów.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
