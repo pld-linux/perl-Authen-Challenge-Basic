@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	Authen-Challenge-Basic perl module
 Summary(pl):	Modu³ perla Authen-Challenge-Basic
 Name:		perl-Authen-Challenge-Basic
@@ -8,17 +8,18 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Authen::Challenge/Authen-Challenge-Basic-%{version}.tar.gz
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl-Digest-MD5
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-Requires:	perl-Digest-MD5
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
-Authen-Challenge-Basic authentication module
+Authen-Challenge-Basic authentication module.
 
 %description -l pl
-Modu³ autentykacji Authen-Challenge-Basic
+Modu³ autentykacji Authen-Challenge-Basic.
 
 %prep
 %setup -q -n Authen-Challenge-Basic-%{version}
