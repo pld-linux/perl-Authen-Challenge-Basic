@@ -3,7 +3,7 @@ Summary:	Authen-Challenge-Basic perl module
 Summary(pl):	Modu³ perla Authen-Challenge-Basic
 Name:		perl-Authen-Challenge-Basic
 Version:	0.1
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Authen::Challenge/Authen-Challenge-Basic-%{version}.tar.gz
