@@ -3,7 +3,7 @@ Summary:	Authen-Challenge-Basic perl module
 Summary(pl):	Modu³ perla Authen-Challenge-Basic
 Name:		perl-Authen-Challenge-Basic
 Version:	0.1
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -13,6 +13,7 @@ Patch0:		%{name}-Digest-MD5.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Digest-MD5
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
