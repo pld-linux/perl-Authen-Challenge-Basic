@@ -3,12 +3,12 @@ Summary:	Authen::Challenge::Basic perl module
 Summary(pl):	Modu³ perla Authen::Challenge::Basic
 Name:		perl-Authen-Challenge-Basic
 Version:	0.1
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Authen/Authen-Challenge-Basic-%{version}.tar.gz
 Patch0:		%{name}-Digest-MD5.patch
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Digest-MD5
 BuildArch:	noarch
@@ -25,7 +25,8 @@ Modu³ autentykacji Authen::Challenge::Basic.
 %patch0 -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -39,6 +40,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%dir %{perl_sitelib}/Authen/Challenge
-%{perl_sitelib}/Authen/Challenge/Basic.pm
+%dir %{perl_vendorlib}/Authen/Challenge
+%{perl_vendorlib}/Authen/Challenge/Basic.pm
 %{_mandir}/man3/*
