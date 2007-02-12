@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Authen::Challenge::Basic - a basic challenge/response authentication scheme
-Summary(pl):	Authen::Challenge::Basic - podstawowy schemat uwierzytelniania wezwanie/odpowied¼
+Summary(pl.UTF-8):   Authen::Challenge::Basic - podstawowy schemat uwierzytelniania wezwanie/odpowiedÅº
 Name:		perl-Authen-Challenge-Basic
 Version:	0.1
 Release:	9
@@ -26,13 +26,13 @@ a session. The protocol includes timing information, so it is possible
 to introduce time constraints in the session to help prevent attacks
 that rely on adjusting the clock in one of the peers.
 
-%description -l pl
-Modu³ Perla Authen::Challenge::Basic udostêpnia prosty, oparty o MD5,
-protokó³ uwierzytelniania typu wezwanie/odpowied¼ umo¿liwiaj±cy
-wzajemne uwierzytelnianie partnerów podczas sesji. Protokó³ zawiera
-informacje synchronizuj±ce, wiêc mo¿liwe jest wprowadzenie podczas
-sesji ograniczeñ czasowych u³atwiaj±cych zapobieganie atakom opartym
-na przestawieniu zegara jednego z partnerów.
+%description -l pl.UTF-8
+ModuÅ‚ Perla Authen::Challenge::Basic udostÄ™pnia prosty, oparty o MD5,
+protokÃ³Å‚ uwierzytelniania typu wezwanie/odpowiedÅº umoÅ¼liwiajÄ…cy
+wzajemne uwierzytelnianie partnerÃ³w podczas sesji. ProtokÃ³Å‚ zawiera
+informacje synchronizujÄ…ce, wiÄ™c moÅ¼liwe jest wprowadzenie podczas
+sesji ograniczeÅ„ czasowych uÅ‚atwiajÄ…cych zapobieganie atakom opartym
+na przestawieniu zegara jednego z partnerÃ³w.
 
 %prep
 %setup -q -n Authen-Challenge-Basic-%{version}
