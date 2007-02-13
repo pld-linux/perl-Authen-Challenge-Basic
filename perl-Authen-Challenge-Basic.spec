@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Authen::Challenge::Basic - a basic challenge/response authentication scheme
-Summary(pl.UTF-8):   Authen::Challenge::Basic - podstawowy schemat uwierzytelniania wezwanie/odpowiedź
+Summary(pl.UTF-8):	Authen::Challenge::Basic - podstawowy schemat uwierzytelniania wezwanie/odpowiedź
 Name:		perl-Authen-Challenge-Basic
 Version:	0.1
 Release:	9
