@@ -1,7 +1,9 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
+
+%define		pdir	Authen
+%define		pnam	Challenge-Basic
 %include	/usr/lib/rpm/macros.perl
 Summary:	Authen::Challenge::Basic - a basic challenge/response authentication scheme
 Summary(pl.UTF-8):	Authen::Challenge::Basic - podstawowy schemat uwierzytelniania wezwanie/odpowiedź
@@ -13,9 +15,10 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Authen/Authen-Challenge-Basic-%{version}.tar.gz
 # Source0-md5:	baafb21abd63b3b8b7829ea082891a42
 Patch0:		%{name}-Digest-MD5.patch
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Authen-Challenge-Basic/
 BuildRequires:	perl-Digest-MD5
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
