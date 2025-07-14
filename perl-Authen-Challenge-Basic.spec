@@ -38,7 +38,7 @@ na przestawieniu zegara jednego z partnerów.
 
 %prep
 %setup -q -n Authen-Challenge-Basic-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__perl} Makefile.PL \
