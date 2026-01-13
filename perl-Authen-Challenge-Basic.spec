@@ -8,7 +8,7 @@ Summary:	Authen::Challenge::Basic - a basic challenge/response authentication sc
 Summary(pl.UTF-8):	Authen::Challenge::Basic - podstawowy schemat uwierzytelniania wezwanie/odpowiedź
 Name:		perl-Authen-Challenge-Basic
 Version:	0.1
-Release:	10
+Release:	11
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Authen/Authen-Challenge-Basic-%{version}.tar.gz
